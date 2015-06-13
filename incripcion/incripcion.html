@@ -1,0 +1,83 @@
+<?php
+session_start();
+if(isset($_SESSION['usuario'])){
+
+
+?>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+        <title>Tribunal Supremo Electoral</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../css/formulario">
+         <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+        <style type="text/css">
+
+
+
+        </style>
+
+    </head>
+    
+    <link rel="stylesheet" href="css/estilo1.css">
+  <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos2.css" />
+</head>
+    <body>  
+<MARQUEE> <center><h1>Tribunal Supremo Elctoral</h1></center></MARQUEE>
+
+
+<div id="contenedor">
+
+ <div id= "Bienvenidos/as">
+      <figure>
+  </figure>
+</div>
+<body>
+ <header>
+
+
+ 
+  </header>
+  
+   <nav id="menu">
+ <div id="inicio">
+      
+  <nav>
+    <ul>
+      <a href="/votacion2/inicio.php">Inicio</a></li>
+      <li><a href=""></a>
+     
+     
+   <center>   <p> <a href="alcalde/alcalde.php">Alcalde </a> </center>  </p>
+ <center>  <p> <a href="presidente/presidente.php">Presidente</a> </p> </center>  
+  <center>  <p> <a href="diputado/diputado.php">Diputado</a> </p> </center>  
+  <center>  <p> <a href="coalicion/coalicion.php">Coaliciones </a></p> </center>  
+    </ul>
+  </nav>
+</div>
+</div>
+ 
+
+
+  
+ 
+   
+
+         </nav>     
+   </DIV>
+</div>
+</body>
+
+</html>
+ <?php
+}else{
+  header("location: /votacion2/inicio.php");
+}
+?>
